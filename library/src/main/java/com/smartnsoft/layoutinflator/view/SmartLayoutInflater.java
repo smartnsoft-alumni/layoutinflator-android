@@ -20,7 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-package view;
+package com.smartnsoft.layoutinflator.view;
 
 import java.lang.reflect.Field;
 
