@@ -179,7 +179,7 @@ This library can break the activity theme.
 To add SmartLayoutInflator to your project, include the following in your **app module** `build.gradle` file:
 
 ```groovy
-implementation("om.smartnsoft:layoutinflator:${latest.version}")
+implementation("com.smartnsoft:layoutinflator:${latest.version}")
 ```
 
 ## License
