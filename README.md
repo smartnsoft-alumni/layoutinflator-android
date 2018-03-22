@@ -184,7 +184,7 @@ implementation("com.smartnsoft:layoutinflator:${latest.version}")
 
 ## License
 
-This SDK is under the MIT license.
+This library is available under the MIT license. See the LICENSE file for more info.
 
 ## Author
 
