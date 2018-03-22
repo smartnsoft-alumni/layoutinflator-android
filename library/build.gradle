@@ -27,12 +27,12 @@ android
     }
   }
 }
+
 dependencies
 {
   compile("com.smartnsoft:droid4me:2.5.2")
   compile("com.android.support:appcompat-v7:25.3.1")
 }
-
 
 task sourcesJar(type: Jar) {
   classifier = "sources"
@@ -119,9 +119,6 @@ publishing.publications.all
 
 bintray
 {
-  user = bintrayUsername
-  key = bintrayKey
-
   publications = ["ReleasePublication"]
 
   pkg
@@ -152,12 +149,12 @@ uploadArchives
     {
       repository(url: "https://api.bintray.com/maven/smartnsoft/maven/layoutInflator/;publish=1")
       {
-        authentication(userName: bintrayUsername, password: bintrayKey)
+        authentication(userName: findProperty("bintrayUsername") ?: "", password: findProperty("bintrayKey") ?: "")
       }
 
-      snapshotRepository(url: nexusSnapshotUrl)
+      snapshotRepository(url: findProperty("nexusSnapshotUrl") ?: "")
       {
-        authentication(userName: nexusUsername, password: nexusPassword)
+        authentication(userName: findProperty("nexusUsername") ?: "", password: findProperty("nexusPassword") ?: "")
       }
 
       pom.project
