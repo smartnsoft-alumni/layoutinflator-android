@@ -7,6 +7,8 @@ The SmartLayoutInflator is deprecated. No more development will be taking place.
 # SmartLayoutInflator
 The SmartLayoutInflator is a component which enables to tune the Android LayoutInflater and play with Typeface.
 
+![image](https://raw.githubusercontent.com/smartnsoft/layoutinflator-android/master/Capture.PNG)
+
 ## Usage
 
 ### 1. Declare the fonts used in your app as typefaces 
